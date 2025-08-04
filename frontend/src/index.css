@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    @apply bg-gray-900 text-gray-100;
+  }
+}
+
+@layer utilities {
+  /* Custom scrollbar */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+  
+  .scrollbar-thumb-gray-600::-webkit-scrollbar-thumb {
+    @apply bg-gray-600 rounded-full;
+  }
+  
+  .scrollbar-track-gray-800::-webkit-scrollbar-track {
+    @apply bg-gray-800 rounded-full;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-track {
+    @apply bg-gray-800 rounded-full;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-gray-600 rounded-full;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-500;
+  }
+}
+
+/* Custom input focus styles */
+input:focus, select:focus, textarea:focus {
+  outline: none;
+}
+
+/* Custom gradient background for buttons */
+.gradient-border {
+  background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+  padding: 1px;
+  border-radius: 0.5rem;
+}
+
+.gradient-border > * {
+  background: theme('colors.gray.800');
+  border-radius: calc(0.5rem - 1px);
+}
+
+/* Animation keyframes */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.5);
+  }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
