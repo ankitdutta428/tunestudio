@@ -11,6 +11,11 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+
+setup.py 
+colab_test_data.csv
+test_colab_simulation.py
+dist
 node_modules
 dist
 dist-ssr
