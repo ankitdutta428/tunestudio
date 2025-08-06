@@ -1,3 +1,0 @@
-[console_scripts]
-tunestudio = tunestudio.main:run_app
-tunestudio-colab = tunestudio.main:run_app_with_ngrok
