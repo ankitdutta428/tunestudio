@@ -14,7 +14,7 @@ from .model_manager import ModelManager
 from .trainer import Trainer
 
 # You can also define package-level information
-__version__ = "0.0.1"
+__version__ = "0.0.11"
 __author__ = "Minerva AI"
 
 # The __all__ variable tells Python what to import when a user runs `from finetuner import *`

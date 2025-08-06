@@ -8,7 +8,7 @@ def read_readme():
 
 setup(
     name="tunestudio",  
-    version="0.0.1",
+    version="0.0.11",
     author="Minerva AI",
     author_email="services.ai.minerva@gmail.com",
     description="An all in one platform for finetuning your LLM models using your Google Colab, Kaggle or Local resources.",
