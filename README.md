@@ -126,18 +126,22 @@ All dependencies are automatically installed:
 
 ### Google Colab
 Install and run in a Colab cell
+```
 !pip install tunestudio
 import tunestudio
 tunestudio.main.run_app_with_ngrok()
+```
 
 text
 
 ### Kaggle Notebooks
 Install and run in a Kaggle cell
+```
 import subprocess
 subprocess.run(["pip", "install", "tunestudio"])
 import tunestudio
 tunestudio.main.run_app_with_ngrok()
+```
 
 text
 
