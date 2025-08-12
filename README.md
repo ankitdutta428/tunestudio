@@ -200,7 +200,7 @@ Contributions are welcome! Here's how you can help:
 4. **Submit a pull request**
 
 ### Development Setup
-git clone https://github.com/yourusername/tunestudio.git
+git clone https://github.com/ankitdutta428/tunestudio.git
 cd tunestudio
 pip install -e .
 
